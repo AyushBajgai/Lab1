@@ -2,6 +2,7 @@ package com.example.lab1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private TextView mShowCount;
+
+    Intent loadIntent = getIntent();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,5 +31,9 @@ public class MainActivity extends AppCompatActivity {
         if(mShowCount != null){
             mShowCount.setText(Integer.toString(mCount));
         }
+    }
+
+    public void codingChallenge(View view) {
+        startActivity(new Intent(MainActivity.this,CodingChallenge.class));
     }
 }

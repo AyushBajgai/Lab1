@@ -47,4 +47,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/show_count"
         android:onClick="countUp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="48dp"
+        android:text="Coding Challenge"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="codingChallenge"
+        app:layout_constraintTop_toBottomOf="@+id/button_count" />
 </androidx.constraintlayout.widget.ConstraintLayout>
