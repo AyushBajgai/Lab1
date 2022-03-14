@@ -1,4 +1,4 @@
-package com.example.lab1;
+package com.example.codingchallenge1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,18 +12,11 @@ public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private TextView mShowCount;
 
-    Intent loadIntent = getIntent();
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mShowCount = (TextView) findViewById(R.id.show_count);
-    }
-
-    public void showToast(View view) {
-        Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
-        toast.show();
     }
 
     public void countUp(View view) {
@@ -33,4 +26,8 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void showToast(View view) {
+        Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 }
